@@ -64,6 +64,75 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Python学习笔记_random模块" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/15/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_random%E6%A8%A1%E5%9D%97/" class="article-date">
+  <time datetime="2020-09-15T12:29:23.717Z" itemprop="datePublished">2020-09-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Pytho学习笔记"><a href="#Pytho学习笔记" class="headerlink" title="Pytho学习笔记"></a>Pytho学习笔记</h2><h1 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h1><h2 id="random-模块"><a href="#random-模块" class="headerlink" title="random 模块"></a>random 模块</h2><ul>
+<li><p>描述</p>
+<p>  random（）方法为随机返回一个实数，其范围在[0，1）内。</p>
+</li>
+<li><p>语法 </p>
+<p>  <code>import random</code></p>
+<p>  <code>random.random()</code></p>
+</li>
+<li><p>参数</p>
+<p>  无</p>
+</li>
+<li><p>返回值</p>
+<p>  在[0,1)内</p>
+</li>
+<li><p>实例</p>
+<p>  <code>import random</code><br>  <code>secret = random.random() </code> 得到结果</p>
+<p>  <code>print (secret)</code> 打印得到的结果<br>  以上实例得到结果：0.2964213966154332</p>
+</li>
+<li><p>random用法</p>
+<p>   random各种使用方法</p>
+<pre><code>  import random</code></pre>
+<p>   随机生成[0.1)的浮点数</p>
+<pre><code>  print(&quot;random():&quot;, random.random())</code></pre>
+<p>   随机生成1000-9999之间的整数</p>
+<pre><code>  print(&quot;randint(1000, 9999):&quot;, random.randint(1000, 9999))</code></pre>
+<p>   随机生成0-20之间的偶数</p>
+<pre><code>  print(&quot;randrange(0, 21, 2):&quot;, random.randrange(0, 21, 2))</code></pre>
+<p>   随机生成0-20之间的浮点数</p>
+<pre><code>  print(&quot;uniform(0, 20):&quot;, random.uniform(0, 20))</code></pre>
+<p>   从序列中随机选择一个元素</p>
+<pre><code>  list_string = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
+
+  print(&quot;choice(list):&quot;, random.choice(list_string))
+
+  print(&quot;choice(string):&quot;, random.choice(&#39;abcd&#39;))</code></pre>
+<p>   对列表元素随机排序</p>
+<pre><code>  list_number = [1, 2, 3, 4, 5]
+
+  random.shuffle(list_number)
+
+  print(&quot;shuffle(list):&quot;, list_number)</code></pre>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/09/15/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_random%E6%A8%A1%E5%9D%97/" data-id="ckf3xwn5b0000iwvm7cbv50k9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Python注意事项" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/09/14/Python%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" class="article-date">
@@ -359,6 +428,10 @@
       <ul>
         
           <li>
+            <a href="/2020/09/15/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_random%E6%A8%A1%E5%9D%97/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2020/09/14/Python%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">(no title)</a>
           </li>
         
@@ -372,10 +445,6 @@
         
           <li>
             <a href="/2020/09/14/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%85%89%E8%B0%B1%E4%BB%AA/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/13/hello-world/">Hello World</a>
           </li>
         
       </ul>

@@ -7,15 +7,15 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="学习目标：小甲鱼课程第二课 Python基础   学习时间：  2020&#x2F;09&#x2F;14">
+  <meta name="description" content="Pytho学习笔记第一天random 模块 描述   random（）方法为随机返回一个实数，其范围在[0，1）内。  语法    import random   random.random()  参数   无  返回值   在[0,1)内  实例   import random  secret &#x3D; random.random()  得到结果   print (secret) 打印得到的结果  以">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2020/09/14/%E5%B0%8F%E7%94%B2%E9%B1%BC%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%BA%8C%E8%AF%BE/index.html">
+<meta property="og:url" content="http://example.com/2020/09/15/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_random%E6%A8%A1%E5%9D%97/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="学习目标：小甲鱼课程第二课 Python基础   学习时间：  2020&#x2F;09&#x2F;14">
+<meta property="og:description" content="Pytho学习笔记第一天random 模块 描述   random（）方法为随机返回一个实数，其范围在[0，1）内。  语法    import random   random.random()  参数   无  返回值   在[0,1)内  实例   import random  secret &#x3D; random.random()  得到结果   print (secret) 打印得到的结果  以">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-14T12:02:17.482Z">
-<meta property="article:modified_time" content="2020-09-14T12:02:05.459Z">
+<meta property="article:published_time" content="2020-09-15T12:29:23.717Z">
+<meta property="article:modified_time" content="2020-09-15T12:35:27.141Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -66,10 +66,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-小甲鱼课程第二课" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Python学习笔记_random模块" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/09/14/%E5%B0%8F%E7%94%B2%E9%B1%BC%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%BA%8C%E8%AF%BE/" class="article-date">
-  <time datetime="2020-09-14T12:02:17.482Z" itemprop="datePublished">2020-09-14</time>
+    <a href="/2020/09/15/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_random%E6%A8%A1%E5%9D%97/" class="article-date">
+  <time datetime="2020-09-15T12:29:23.717Z" itemprop="datePublished">2020-09-15</time>
 </a>
     
   </div>
@@ -78,44 +78,54 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="学习目标："><a href="#学习目标：" class="headerlink" title="学习目标："></a>学习目标：</h1><p><font color=#999AAA >小甲鱼课程第二课</p>
-<p>Python基础</p>
-<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
+        <h2 id="Pytho学习笔记"><a href="#Pytho学习笔记" class="headerlink" title="Pytho学习笔记"></a>Pytho学习笔记</h2><h1 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h1><h2 id="random-模块"><a href="#random-模块" class="headerlink" title="random 模块"></a>random 模块</h2><ul>
+<li><p>描述</p>
+<p>  random（）方法为随机返回一个实数，其范围在[0，1）内。</p>
+</li>
+<li><p>语法 </p>
+<p>  <code>import random</code></p>
+<p>  <code>random.random()</code></p>
+</li>
+<li><p>参数</p>
+<p>  无</p>
+</li>
+<li><p>返回值</p>
+<p>  在[0,1)内</p>
+</li>
+<li><p>实例</p>
+<p>  <code>import random</code><br>  <code>secret = random.random() </code> 得到结果</p>
+<p>  <code>print (secret)</code> 打印得到的结果<br>  以上实例得到结果：0.2964213966154332</p>
+</li>
+<li><p>random用法</p>
+<p>   random各种使用方法</p>
+<pre><code>  import random</code></pre>
+<p>   随机生成[0.1)的浮点数</p>
+<pre><code>  print(&quot;random():&quot;, random.random())</code></pre>
+<p>   随机生成1000-9999之间的整数</p>
+<pre><code>  print(&quot;randint(1000, 9999):&quot;, random.randint(1000, 9999))</code></pre>
+<p>   随机生成0-20之间的偶数</p>
+<pre><code>  print(&quot;randrange(0, 21, 2):&quot;, random.randrange(0, 21, 2))</code></pre>
+<p>   随机生成0-20之间的浮点数</p>
+<pre><code>  print(&quot;uniform(0, 20):&quot;, random.uniform(0, 20))</code></pre>
+<p>   从序列中随机选择一个元素</p>
+<pre><code>  list_string = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
 
-<h1 id="学习内容："><a href="#学习内容：" class="headerlink" title="学习内容："></a>学习内容：</h1><font color=#999AAA >
+  print(&quot;choice(list):&quot;, random.choice(list_string))
 
-<ol start="0">
-<li><p>什么是BIF？</p>
-<p> BIF：Build-in function</p>
-</li>
-<li><p>用课堂上小甲鱼教的方法数一数 Python3 提供了多少个 BIF？</p>
-<p> 基于目前python的更新，BIF越来越多</p>
-</li>
-<li><p>在 Python 看来：’FishC’ 和 ‘fishc’ 一样吗？</p>
-<p> 不一样</p>
-</li>
-<li><p>在小甲鱼看来，Python 中什么是最重要的？你赞同吗？</p>
-<p> 仁者见仁</p>
-</li>
-<li><p>这节课的例子中出现了“=”和“==” ，    他们表示不同的含义，你在编程的过程中会不小心把“==”误写成“=”吗？有没有好的办法可以解决这个问题呢？</p>
-<p> 前者赋值，后者等于</p>
-</li>
-<li><p>你听说过“拼接”这个词吗？</p>
-<p> 可以把两个字符串“相加”，在python这种做法叫做相加</p>
-</li>
-</ol>
-<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
+  print(&quot;choice(string):&quot;, random.choice(&#39;abcd&#39;))</code></pre>
+<p>   对列表元素随机排序</p>
+<pre><code>  list_number = [1, 2, 3, 4, 5]
 
-<h1 id="学习时间："><a href="#学习时间：" class="headerlink" title="学习时间："></a>学习时间：</h1><font color=#999AAA >
+  random.shuffle(list_number)
 
-<p>2020/09/14</p>
-<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
-
+  print(&quot;shuffle(list):&quot;, list_number)</code></pre>
+</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/09/14/%E5%B0%8F%E7%94%B2%E9%B1%BC%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%BA%8C%E8%AF%BE/" data-id="ckf2h9mcx0000scvm34q85qll" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/09/15/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_random%E6%A8%A1%E5%9D%97/" data-id="ckf3xwn5b0000iwvm7cbv50k9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -124,17 +134,8 @@
     
 <nav id="article-nav">
   
-    <a href="/2020/09/14/Python%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/09/14/%E5%B0%8F%E7%94%B2%E9%B1%BC%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E8%AF%BE/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/09/14/Python%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title"></div>
     </a>
