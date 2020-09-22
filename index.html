@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="学海无涯苦作舟">
@@ -117,9 +117,14 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">4</span></a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">9</span></a>
 
   </li>
   </ul>
@@ -149,6 +154,189 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/22/Python_%E5%9F%BA%E7%A1%80%20/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="从文处安">
+      <meta itemprop="description" content="学海无涯苦作舟">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从文处安">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/22/Python_%E5%9F%BA%E7%A1%80%20/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-22 20:04:34 / 修改时间：20:06:51" itemprop="dateCreated datePublished" datetime="2020-09-22T20:04:34+08:00">2020-09-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Python-基础"><a href="#Python-基础" class="headerlink" title="Python|基础"></a>Python|基础</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><ul>
+<li><p><strong>类</strong></p>
+<ul>
+<li><p>数据的构成状态以及数据能做什么（行为）的描述</p>
+</li>
+<li><p>只能看见数据项的状态和行为</p>
+</li>
+<li><p>类与抽象数据类型类似</p>
+</li>
+<li><p>数据项被称为对象，一个对象等价于一个类的实例</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="内建原子数据类型"><a href="#内建原子数据类型" class="headerlink" title="内建原子数据类型"></a>内建原子数据类型</h4><ul>
+<li><p>两大内建原子数据类型：整数类型（int）、浮点数类型(float)</p>
+</li>
+<li><p>Python通过bool类实现对表达真值的布尔数据类型，状态值为True或False,布尔运算符有and,or和not。</p>
+</li>
+</ul>
+<h4 id="内建集合数据类型"><a href="#内建集合数据类型" class="headerlink" title="内建集合数据类型"></a>内建集合数据类型</h4><ul>
+<li><p><strong>列表</strong></p>
+<ul>
+<li><p>零个或者多个指向Python的数据对象的引用的有序集合，通过在方括号内以逗号分隔的一系列值来表达。**空列表就是[]**。</p>
+</li>
+<li><p><strong>列表是异构的</strong>，其指向的数据对象不需要是同一个类，并且这些值可以赋值给一个变量。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList = [<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="literal">True</span>,<span class="number">8</span>,<span class="number">9</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="literal">True</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可用于任意python<strong>序列</strong>的运算符</p>
+</li>
+<li><p>索引   [ ]：取列表中的某个元素</p>
+</li>
+<li><p>连接   +  ：将序列连接到一起</p>
+</li>
+<li><p>重复   *  ：重复连接N次</p>
+</li>
+<li><p>成员   in ：询问序列中是否有某元素</p>
+</li>
+<li><p>长度   len：询问序列中的某个元素</p>
+</li>
+<li><p>切片   [:]：去序列中的某个元素</p>
+</li>
+<li><p>注：列表和序列的下标都是从零开始</p>
+</li>
+<li><p>快速初始化序列：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">		</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList = [<span class="number">0</span>] * <span class="number">6</span></span><br><span class="line">   </span><br><span class="line">   &gt;&gt;&gt; myList</span><br><span class="line">		</span><br><span class="line">   `[<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>]`</span><br><span class="line">	</span><br></pre></td></tr></table></figure></li>
+<li><p>重复运算返回的结果是序列中指向数据对象的引用重复。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">   &gt;&gt;&gt; myList = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">   </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>A = myList * <span class="number">3</span></span><br><span class="line">   </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>A</span><br><span class="line">   </span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line">   </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>A = [myList] *<span class="number">3</span></span><br><span class="line">   </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>A</span><br><span class="line">   </span><br><span class="line">[[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]]</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>用法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>append 列表末尾添加一个新元素</td>
+<td>alist.append (item)</td>
+</tr>
+<tr>
+<td>insert 在列表第i个位置插入一个元素</td>
+<td>alist.insert(i,item)</td>
+</tr>
+<tr>
+<td>pop 删除并返回列表中最后一个元素</td>
+<td>alist.pop ()</td>
+</tr>
+<tr>
+<td>pop 删除并返回列表中第i个位置的元素</td>
+<td>alist.pop(i)</td>
+</tr>
+<tr>
+<td>sort 将列表元素排序</td>
+<td>alist.sort()</td>
+</tr>
+<tr>
+<td>reverse 将列表元素倒序排序</td>
+<td>alist.reverse()</td>
+</tr>
+<tr>
+<td>del 删除列表第i个位置的元素</td>
+<td>del.alist[i]</td>
+</tr>
+<tr>
+<td>index 返回item第一次出现的下标</td>
+<td>alist.index(item)</td>
+</tr>
+<tr>
+<td>count 返回item在列表中出现的次数</td>
+<td>alist.count(item)</td>
+</tr>
+<tr>
+<td>remove 从列表中移除第一次出现的item</td>
+<td>alist.remove(item)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>列表末尾添加一个新元素</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList = [<span class="number">1024</span>,<span class="number">3</span>,<span class="literal">True</span>,<span class="number">6.5</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList.append (<span class="literal">False</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">1024</span>, <span class="number">3</span>, <span class="literal">True</span>, <span class="number">6.5</span>, <span class="literal">False</span>] </span><br></pre></td></tr></table></figure></li>
+<li><p>在列表第i个位置插入一个元素</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">1024</span>, <span class="number">3</span>, <span class="literal">True</span>, <span class="number">6.5</span>, <span class="literal">False</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList.insert(<span class="number">2</span>,<span class="number">4.5</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">1024</span>, <span class="number">3</span>, <span class="number">4.5</span>, <span class="literal">True</span>, <span class="number">6.5</span>, <span class="literal">False</span>]</span><br></pre></td></tr></table></figure></li>
+<li><p>删除并返回列表中最后一个元素</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">1024</span>, <span class="number">3</span>, <span class="number">4.5</span>, <span class="literal">True</span>, <span class="number">6.5</span>, <span class="literal">False</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList.pop()</span><br><span class="line"><span class="literal">False</span></span><br></pre></td></tr></table></figure></li>
+<li><p>删除并返回列表中第i个位置的元素</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">1024</span>, <span class="number">3</span>, <span class="number">4.5</span>, <span class="literal">True</span>, <span class="number">6.5</span>, <span class="literal">False</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList.pop()</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList.pop(<span class="number">1</span>)</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure></li>
+<li><p>将列表元素排序</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList.sort()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="literal">True</span>, <span class="number">4.5</span>, <span class="number">6.5</span>, <span class="number">1024</span>]</span><br></pre></td></tr></table></figure></li>
+<li><p>将列表元素倒序排序</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList.reverse()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">1024</span>, <span class="number">6.5</span>, <span class="number">4.5</span>, <span class="literal">True</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure></li>
+<li><p>删除列表第i个位置的元素</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">del</span> myList[<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">1024</span>, <span class="number">6.5</span>, <span class="number">4.5</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure></li>
+<li><p>返回item在列表中出现的次数</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">1024</span>, <span class="number">6.5</span>, <span class="number">4.5</span>, <span class="literal">True</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList.count(<span class="number">6.5</span>)</span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure></li>
+<li><p>返回item第一次出现的下标</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">1024</span>, <span class="number">6.5</span>, <span class="number">4.5</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList.index(<span class="number">4.5</span>)</span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+<li><p>从列表中移除第一次出现的item</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">1024</span>, <span class="number">6.5</span>, <span class="number">4.5</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList.remove(<span class="number">6.5</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">1024</span>, <span class="number">4.5</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList.remove(<span class="number">1024</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myList</span><br><span class="line">[<span class="number">4.5</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/21/MATLAB%20R2018a-%E5%85%A5%E9%97%A8%E7%9F%A5%E8%AF%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -172,9 +360,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-09-21 17:03:57 / 修改时间：18:14:17" itemprop="dateCreated datePublished" datetime="2020-09-21T17:03:57+08:00">2020-09-21</time>
+              <time title="创建时间：2020-09-21 17:03:57" itemprop="dateCreated datePublished" datetime="2020-09-21T17:03:57+08:00">2020-09-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-22 09:44:35" itemprop="dateModified" datetime="2020-09-22T09:44:35+08:00">2020-09-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MATLAB/" itemprop="url" rel="index"><span itemprop="name">MATLAB</span></a>
+                </span>
             </span>
 
           
@@ -289,8 +492,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-21 11:39:45" itemprop="dateModified" datetime="2020-09-21T11:39:45+08:00">2020-09-21</time>
+                <time title="修改时间：2020-09-22 09:46:00" itemprop="dateModified" datetime="2020-09-22T09:46:00+08:00">2020-09-22</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%85%89%E8%B0%B1%E4%BB%AA/" itemprop="url" rel="index"><span itemprop="name">光谱仪</span></a>
+                </span>
+            </span>
 
           
 
@@ -382,9 +594,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-09-15 20:29:23 / 修改时间：21:18:55" itemprop="dateCreated datePublished" datetime="2020-09-15T20:29:23+08:00">2020-09-15</time>
+              <time title="创建时间：2020-09-15 20:29:23" itemprop="dateCreated datePublished" datetime="2020-09-15T20:29:23+08:00">2020-09-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-22 09:45:07" itemprop="dateModified" datetime="2020-09-22T09:45:07+08:00">2020-09-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+                </span>
             </span>
 
           
@@ -491,8 +718,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-15 21:29:03" itemprop="dateModified" datetime="2020-09-15T21:29:03+08:00">2020-09-15</time>
+                <time title="修改时间：2020-09-22 09:45:47" itemprop="dateModified" datetime="2020-09-22T09:45:47+08:00">2020-09-22</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+                </span>
+            </span>
 
           
 
@@ -505,20 +741,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="学习目标："><a href="#学习目标：" class="headerlink" title="学习目标："></a>学习目标：</h1><font color=#999AAA >
-
-<p>Python注意事项</p>
-<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
-
-<h1 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h1><font color=#999AAA >
-
+          <h1 id="学习目标："><a href="#学习目标：" class="headerlink" title="学习目标："></a>学习目标：</h1><p>Python注意事项</p>
+<hr>
+<h1 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h1><hr>
 <ul>
 <li>python中不能以数字开头</li>
-<li></li>
 </ul>
-<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
-
-
 
       
     </div>
@@ -569,8 +797,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-15 21:20:07" itemprop="dateModified" datetime="2020-09-15T21:20:07+08:00">2020-09-15</time>
+                <time title="修改时间：2020-09-22 09:46:15" itemprop="dateModified" datetime="2020-09-22T09:46:15+08:00">2020-09-22</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B0%8F%E7%94%B2%E9%B1%BC/" itemprop="url" rel="index"><span itemprop="name">小甲鱼</span></a>
+                </span>
+            </span>
 
           
 
@@ -666,8 +903,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-15 21:19:54" itemprop="dateModified" datetime="2020-09-15T21:19:54+08:00">2020-09-15</time>
+                <time title="修改时间：2020-09-22 09:46:25" itemprop="dateModified" datetime="2020-09-22T09:46:25+08:00">2020-09-22</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B0%8F%E7%94%B2%E9%B1%BC/" itemprop="url" rel="index"><span itemprop="name">小甲鱼</span></a>
+                </span>
+            </span>
 
           
 
@@ -747,8 +993,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-15 21:30:38" itemprop="dateModified" datetime="2020-09-15T21:30:38+08:00">2020-09-15</time>
+                <time title="修改时间：2020-09-22 09:46:37" itemprop="dateModified" datetime="2020-09-22T09:46:37+08:00">2020-09-22</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%85%89%E8%B0%B1%E4%BB%AA/" itemprop="url" rel="index"><span itemprop="name">光谱仪</span></a>
+                </span>
+            </span>
 
           
 
@@ -959,9 +1214,13 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span>
       </div>
   </nav>
 </div>
@@ -1000,6 +1259,9 @@
   </span>
   <span class="author" itemprop="copyrightHolder">从文处安</span>
 </div>
+<div class="theme-info">
+  <div class="powered-by">
+  <span class="post-count">博客全站共3.4k字
 
         
 
